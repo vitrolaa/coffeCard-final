@@ -1,0 +1,138 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: var(--roboto);
+}
+
+:root {
+  --roboto: "Roboto", sans-serif;
+  --baloo: "Baloo 2", sans-serif;
+  --title-xl-b: 800 48px/130% var(--baloo);
+  --title-l-b: 800 32px/130% var(--baloo);
+  --title-m: 800 24px/130% var(--baloo);
+  --title-s: 700 20px/130% var(--baloo);
+  --title-xs: 700 18px/130% var(--baloo);
+
+  --title-l-r-r: 400 20px/130% var(--roboto);
+  --title-l-b-r: 800 20px/130% var(--roboto);
+  --title-m-r-r: 400 16px/130% var(--roboto);
+  --title-m-b-r: 800 16px/130% var(--roboto);
+  --title-s-r: 400 14px/130% var(--roboto);
+  --title-xs-r: 800 12px/130% var(--roboto);
+
+  --tag: 800 10px/130% var(--roboto);
+  --button-g: 800 14px/160% var(--roboto);
+  --button-m: 400 12px/160% var(--roboto);
+
+  --yellow-dark: #c47f17;
+  --yellow: #dbac2c;
+  --yellow-light: #f1e9c9;
+  --purple-dark: #4b2995;
+  --purple: #8047f8;
+  --purple-light: #ebe5f9;
+
+  --base-title: #272221;
+  --base-subtitle: #403937;
+  --base-text: #574f4d;
+  --base-label: #8d8686;
+  --base-hover: #d7d5d5;
+  --base-button: #e6e5e5;
+  --base-input: #ededed;
+  --base-card: #f3f2f2;
+  --background: #fafafa;
+  --white: #ffffff;
+}
+
+ul {
+  list-style: none;
+}
+
+main {
+  display: flex;
+  align-items: start;
+  justify-content: center;
+  gap: 56px;
+  padding-top: 94px;
+  padding-bottom: 108px;
+  background-image: url(./assets/bg-blur.svg);
+}
+
+#content {
+  width: 588px;
+  display: flex;
+  flex-direction: column;
+
+  h1 {
+    font-family: var(--baloo);
+    font-size: 48px;
+    font-weight: 800;
+    color: #272221;
+    padding-bottom: 16px;
+  }
+
+  p {
+    font-size: 20px;
+    font-weight: 400;
+    color: #403937;
+    padding-bottom: 66px;
+    font-family: var(--roboto);
+  }
+}
+
+.info-list {
+  font-family: var(--roboto);
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  row-gap: 20px;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.info-list li {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.icon {
+  padding: 8px;
+  border-radius: 999px;
+  color: white;
+}
+
+.yellow-dark {
+  background-color: #c47f17;
+}
+
+.base-text {
+  background-color: #574f4d;
+}
+
+.yellow {
+  background-color: #dbac2c;
+}
+
+.purple {
+  background-color: #8047f8;
+}
+
+section {
+  padding: 32px 160px;
+
+  h2 {
+    font-size: 32px;
+    font-weight: 800;
+    font-family: var(--baloo);
+    color: #403937;
+    padding-bottom: 34px;
+  }
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  row-gap: 40px;
+  column-gap: 32px;
+}
